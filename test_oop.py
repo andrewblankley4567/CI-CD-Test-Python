@@ -9,7 +9,7 @@ def getJackRussell():
 def getDachshund():
     return Dachshund("Danny", 5)
 
-def test_speak():
+def test_speak(getJackRussell, getDachshund):
     miles = getJackRussell
     danny =  getDachshund
     assert(miles.speak() == "Miles says Arf")
