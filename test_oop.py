@@ -3,7 +3,7 @@ from oop import *
 def test_speak():
     miles = JackRussellTerrier("Miles", 4)
     danny =  Dachshund("Danny", 5)
-    a = "hello"
+    assert(type(miles) == JackRussellTerrier.__class__)
     assert(miles.speak() == "Arf")
     assert(miles.speak("Grrr") == "Miles says Grrr")
     assert(miles.age == 4)
