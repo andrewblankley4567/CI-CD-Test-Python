@@ -7,4 +7,4 @@ def test_speak():
     assert(miles.speak("Grrr") == "Miles says Grrr")
     assert(miles.age == 4)
     assert(danny.speak("Danny says bark"))
-    assert(print(danny) == "Danny is 5 years old") 
+    assert(danny.__str__() == "Danny is 5 years old") 
